@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Merriweather:300,300italic,700');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+
+
+.infoGraphics .box p {
+  position: relative;
+  font-size: 16;
+}
+
+.infoGraphics .row {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.infoGraphics .text-box-left {
+  padding: 75px;
+  padding-right: 15px;
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.infoGraphics .text-box-right {
+  padding: 75px;
+  padding-left: 15px;
+  padding-top: 75px;
+  padding-bottom: 90px;
+}
+
+.infoGraphics .text-box-left h3 {
+  text-align: left;
+  color: #2E6171;
+  font-size: 32px;
+}
+
+.infoGraphics .text-box-left p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.infoGraphics .text-box-right p {
+  text-align: right;
+  font-size: 15px;
+}
+
+.infoGraphics .text-box-right h3 {
+  text-align: right;
+  color: #2E6171;
+  font-size: 32px;
+}
+
+.infoGraphics .space {
+  padding: 36px;
+}
+
+.infoGraphics .crop-right {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  float: right;
+  height: 200px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.infoGraphics .crop-left {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  float: left;
+  height: 200px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.infoGraphics .crop-right img, .infoGraphics .crop-left img {
+  height: 200px;
+  width: auto;
+}
