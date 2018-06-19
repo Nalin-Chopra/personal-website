@@ -1,3 +1,4 @@
+
 .intro {
   height: 100vh;
   min-height: 800px;
@@ -10,8 +11,7 @@
 }
 
 .headerBox h1 {
-  font: Lato;
-  color: #2E6171;
+  font: Merriweather;
   font-size: 70px;
   margin-bottom: 20px;
 }
