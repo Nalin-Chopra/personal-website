@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-home-page',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit() {
+    $('#scroller').click(function(e) {
+      $('html, body').animate({ scrollTop: $('.mainDescription').offset().top }, 1000);
+    });
   }
-
 }

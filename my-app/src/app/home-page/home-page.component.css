@@ -1,43 +1,221 @@
 
-.intro {
-  height: 100vh;
-  min-height: 800px;
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+
+@-ms-viewport {
+	width: device-width;
 }
 
-.headerBox {
-  text-align: center;
-  position:relative;
-  vertical-align: middle;
+html, body, div, span, h1, h2, h3, p, header, nav{
+	font-family: "Raleway", sans-serif;
+	vertical-align: baseline;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
 }
 
-.headerBox h1 {
-  font: Merriweather;
-  font-size: 70px;
-  margin-bottom: 20px;
+
+.socicons-list {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+}
+.socicons-list li {
+ margin: 30px 10px;
+}
+.socicons-list li a {
+ text-decoration: none;
+ padding: 20px;
+ font-size: 20px;
+ border-radius: 40%;
+ color: #fff;
+ background-color: #f1f1f1;
+ transition: all ease-in-out 150ms;
+}
+.socicons-list li a:hover {
+ text-shadow: 0 5px 10px #212121;
+}
+.socicons-list li:nth-child(1) a {
+ background-color: #3e5b98;
+}
+.socicons-list li:nth-child(2) a {
+ background-color: #c13584;
+}
+.socicons-list li:nth-child(3) a {
+ background-color: #4da7de;
+}
+.socicons-list li:nth-child(4) a {
+ background-color: #dd4b39;
+}
+.socicons-list li:nth-child(5) a {
+ background-color: black;
 }
 
-.headerBox h2 {
-  margin-bottom:125px;
-  margin-top:125px;
+/* Add a hover effect if you want */
+/* .fa:hover {
+    opacity: 0.7;
 }
 
-.buttonBox {
-  margin-top: 80px;
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+} */
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+/* .fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
-.headerBox .bgd {
-  min-height: 400px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  position: absolute;
-  background: url("./headshot.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  opacity: 0.4;
-  min-height: 800px;
+/* Twitter */
+/* .fa-twitter {
+    background: #55ACEE;
+    color: white;
+} */
+
+nav {
+	display: block;
+}
+
+
+ul {
+	list-style: disc;
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+}
+
+ul li {
+	padding-left: 0.5em;
+}
+
+ul.alt li {
+	border-top: solid 1px rgba(144, 144, 144, 0.25);
+	padding: 0.5em 0;
+}
+
+.mainDescription {
+	padding: 4em;
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+.mainDescription h1 {
+	font-size: 45px;;
+}
+
+.mainDescription p {
+	padding-top: 2em;
+}
+
+/* Keeps open section of picture on bottom and maintains individual picture*/
+.bottom {
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url("../../assets/baybridge.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+#navigation {
+	background-color: #fff;
+	border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+	box-shadow: 0px;
+	color: #484848;
+	font-size: 1.25em;
+	height: 4.5em;
+	left: 0;
+	line-height: 4.4em;
+	/* position: fixed; */
+	top: 0;
+	width: 100%;
+	z-index: 10001;
+}
+
+/* #navigation h1 {
+	position: absolute;
+	color: #484848;
+	font-weight: 400;
+	height: inherit;
+	line-height: inherit;
+	left: 1.25em;
+	margin: 0;
+	padding: 0;
+	top: 0;
+} */
+
+#navigation nav {
+	height: inherit;
+	line-height: inherit;
+	position: absolute;
+	right: 1.25em;
+	top: 0;
+	vertical-align: middle;
+	text-align: left;
+	float: left;
+}
+
+#navigation nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+#navigation nav ul li {
+	border-radius: 4px;
+	display: inline-block;
+	margin-left: 1.75em;
+	padding-left: 0;
+}
+
+#navigation nav ul li a {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* REmoves ugly underlining for links */
+#navigation nav ul li a:hover {
+	color: #484848;
+}
+
+/* THIS IS THE LINE THAT MAKES NAVBAR GOOD */
+#navigation.alt {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+	height: 3.25em;
+	line-height: 3.25em;
+	position: absolute;
+}
+
+#banner {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url("../../assets/baybridge.jpg");
+	text-align: center;
+  padding: 15em 0 15em 0;
+  background-position: center top;
+	background-size: cover;
+  background-attachment: fixed;
+}
+/*
+My name */
+#banner h2 {
+	color: white;
+	font-size: 85px;
+	margin-bottom: 20px;
+  display: inline-block;
+}
+
+#banner p {
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
 }
 
 .scroll {
@@ -47,6 +225,7 @@
 }
 
 .scroll a {
+  color: white;
   padding-top: 20px;
 }
 
@@ -57,26 +236,10 @@
   width: 50px;
   height: 50px;
   margin-left: -25px;
-  border-left: 1px solid #2E6171;
-  border-bottom: 1px solid #2E6171;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
   animation: scrollerFunc 1.5s infinite;
   box-sizing: border-box;
-}
-
-@-webkit-keyframes scrollerFunc {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
 }
 
 @keyframes scrollerFunc {
